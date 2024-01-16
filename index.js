@@ -12,6 +12,7 @@ modalCloseBtn.addEventListener('click', function() {
 
 loginForm.addEventListener("submit", function(e){
     e.preventDefault()
+    console.log("submit button  works")
 })
 
 
