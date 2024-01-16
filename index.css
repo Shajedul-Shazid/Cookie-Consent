@@ -125,7 +125,8 @@ main{
 
 .modal-btn{
     padding: 10px 24px;
-    cursor: pointer;
+    cursor: pointer;  
+    
 }
 
 /* modal input */
@@ -153,4 +154,14 @@ input{
     height: 140px;
     line-height: 23px;
     margin-bottom: 0;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input {
+    border: 1px solid #212529;
+    border-radius: 3px;    
 }
