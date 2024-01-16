@@ -1,6 +1,7 @@
 const modalEl = document.getElementById("modal")
 const modalCloseBtn = document.getElementById("modal-close-btn")
 const loginForm = document.getElementById("login-form")
+const modalText = document.getElementById("modal-text")
 
 setTimeout(function(){
     modalEl.style.display = 'block'
@@ -12,7 +13,15 @@ modalCloseBtn.addEventListener('click', function() {
 
 loginForm.addEventListener("submit", function(e){
     e.preventDefault()
-    console.log("submit button  works")
+    modalText.innerHTML = 
+    `
+    <div class="modal-inner-loading">
+        <img src="images/loading.svg" class="loading">
+        <p id="uploadText">
+            Uploading your data to the dark web...
+        </p>
+    </div>
+    `
 })
 
 
