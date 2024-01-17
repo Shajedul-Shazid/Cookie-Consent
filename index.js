@@ -15,9 +15,7 @@ loginForm.addEventListener("submit", function(e){
     e.preventDefault()
 
     const formDataObject = new FormData(loginForm)
-
     const fullName = formDataObject.get('fullName')
-    const email = formDataObject.get('email')     
 
     modalText.innerHTML = 
     `
