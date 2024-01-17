@@ -21,7 +21,13 @@ loginForm.addEventListener("submit", function(e){
             Uploading your data to the dark web...
         </p>
     </div>
-    `
+    
+     `
+
+    setTimeout(function(){
+        document.getElementById("uploadText").innerHTML = "Making the sale....."
+    },1500)
+
 })
 
 
