@@ -26,6 +26,18 @@ loginForm.addEventListener("submit", function(e){
     setTimeout(function(){
         document.getElementById("uploadText").innerText = "Making the sale....."
     },1500)
+
+    setTimeout(function(){
+        const modalInnerText = document.getElementById("modal-inner")
+        modalInnerText.innerHTML = 
+        `
+            <h2>Thanks you sucker! </h2>
+            <p>We just sold the rights to your eternal soul.</p>
+            <div class="idiot-gif">
+                <img src="images/pirate.gif">
+            </div>        
+        `
+    },3000)
 })
 
 
