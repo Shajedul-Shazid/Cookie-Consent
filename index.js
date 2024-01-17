@@ -15,7 +15,9 @@ loginForm.addEventListener("submit", function(e){
     e.preventDefault()
 
     const formDataObject = new FormData(loginForm)
-    console.log(formDataObject)
+
+    const fullName = formDataObject.get('fullName')
+    const email = formDataObject.get('email')     
 
     modalText.innerHTML = 
     `
@@ -35,7 +37,7 @@ loginForm.addEventListener("submit", function(e){
         const modalInnerText = document.getElementById("modal-inner")
         modalInnerText.innerHTML = 
         `
-            <h2>Thanks you sucker! </h2>
+            <h2>Thanks you ${fullName} sucker! </h2>
             <p>We just sold the rights to your eternal soul.</p>
             <div class="idiot-gif">
                 <img src="images/pirate.gif">
