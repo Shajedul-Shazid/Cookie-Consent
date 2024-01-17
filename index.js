@@ -13,6 +13,10 @@ modalCloseBtn.addEventListener('click', function() {
 
 loginForm.addEventListener("submit", function(e){
     e.preventDefault()
+
+    const formDataObject = new FormData(loginForm)
+    console.log(formDataObject)
+
     modalText.innerHTML = 
     `
     <div class="modal-inner-loading">
