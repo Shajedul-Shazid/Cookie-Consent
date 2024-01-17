@@ -33,6 +33,7 @@ loginForm.addEventListener("submit", function(e){
 
     setTimeout(function(){
         const modalInnerText = document.getElementById("modal-inner")
+        modalCloseBtn.disabled = false
         modalInnerText.innerHTML = 
         `
             <h2>Thanks you ${fullName} sucker! </h2>
